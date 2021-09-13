@@ -9,14 +9,12 @@ import java.util.Scanner;
 public class ex2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in); //getting input
-        System.out.print("What is the input string?");
-        String str = input.nextLine();
+        System.out.print("What is the input string? ");
+        String characters = input.nextLine();
         int count = 0;
-        for (int i = 0; i < str.length(); i++) { //counts the number of characters in the string
-            if (str.charAt(i) != ' ') ;
+        for (int i = 0; i < characters.length(); i++) { //counts the number of characters in the string
             count++;
-
         }
-        System.out.println("\n" + str + " has " + count + " characters");
+        System.out.println("\n" + characters + " has " + count + " characters");
     }
 }
